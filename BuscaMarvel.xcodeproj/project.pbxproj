@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F792EDC025C8D33700AAE394 /* AppTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792EDBF25C8D33700AAE394 /* AppTitle.swift */; };
+		F792EDD125C8E1A300AAE394 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F792EDCB25C8DEE700AAE394 /* Roboto-Black.ttf */; };
+		F792EDD525C8E1A700AAE394 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F792EDCC25C8DEF000AAE394 /* Roboto-Regular.ttf */; };
+		F792EDD925C8E1A900AAE394 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F792EDCD25C8DEF600AAE394 /* Roboto-Light.ttf */; };
+		F7DAF44225CA35F9009B2E83 /* FilterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAF44125CA35F9009B2E83 /* FilterInput.swift */; };
+		F7DAF44725CA3820009B2E83 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAF44625CA3820009B2E83 /* Fonts.swift */; };
+		F7DAF44F25CA3B1F009B2E83 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAF44E25CA3B1F009B2E83 /* HomeScreen.swift */; };
+		F7FA8CC025C5DFCD000BF48D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA8CBF25C5DFCD000BF48D /* AppDelegate.swift */; };
+		F7FA8CC225C5DFCD000BF48D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA8CC125C5DFCD000BF48D /* SceneDelegate.swift */; };
+		F7FA8CC425C5DFCD000BF48D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA8CC325C5DFCD000BF48D /* ViewController.swift */; };
+		F7FA8CC725C5DFCD000BF48D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7FA8CC525C5DFCD000BF48D /* Main.storyboard */; };
+		F7FA8CCA25C5DFCD000BF48D /* BuscaMarvel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7FA8CC825C5DFCD000BF48D /* BuscaMarvel.xcdatamodeld */; };
+		F7FA8CCC25C5DFCD000BF48D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FA8CCB25C5DFCD000BF48D /* Assets.xcassets */; };
+		F7FA8CCF25C5DFCD000BF48D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7FA8CCD25C5DFCD000BF48D /* LaunchScreen.storyboard */; };
+		F7FA8CDA25C5DFCE000BF48D /* BuscaMarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA8CD925C5DFCE000BF48D /* BuscaMarvelTests.swift */; };
+		F7FA8CE525C5DFCE000BF48D /* BuscaMarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA8CE425C5DFCE000BF48D /* BuscaMarvelUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7FA8CD625C5DFCD000BF48D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7FA8CB425C5DFCD000BF48D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7FA8CBB25C5DFCD000BF48D;
+			remoteInfo = BuscaMarvel;
+		};
+		F7FA8CE125C5DFCE000BF48D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7FA8CB425C5DFCD000BF48D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7FA8CBB25C5DFCD000BF48D;
+			remoteInfo = BuscaMarvel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F792EDBF25C8D33700AAE394 /* AppTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitle.swift; sourceTree = "<group>"; };
+		F792EDCB25C8DEE700AAE394 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		F792EDCC25C8DEF000AAE394 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		F792EDCD25C8DEF600AAE394 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		F7DAF44125CA35F9009B2E83 /* FilterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterInput.swift; sourceTree = "<group>"; };
+		F7DAF44625CA3820009B2E83 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		F7DAF44E25CA3B1F009B2E83 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		F7FA8CBC25C5DFCD000BF48D /* BuscaMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuscaMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7FA8CBF25C5DFCD000BF48D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7FA8CC125C5DFCD000BF48D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F7FA8CC325C5DFCD000BF48D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7FA8CC625C5DFCD000BF48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7FA8CC925C5DFCD000BF48D /* BuscaMarvel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BuscaMarvel.xcdatamodel; sourceTree = "<group>"; };
+		F7FA8CCB25C5DFCD000BF48D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7FA8CCE25C5DFCD000BF48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7FA8CD025C5DFCD000BF48D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7FA8CD525C5DFCD000BF48D /* BuscaMarvelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuscaMarvelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7FA8CD925C5DFCE000BF48D /* BuscaMarvelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaMarvelTests.swift; sourceTree = "<group>"; };
+		F7FA8CDB25C5DFCE000BF48D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7FA8CE025C5DFCE000BF48D /* BuscaMarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuscaMarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7FA8CE425C5DFCE000BF48D /* BuscaMarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaMarvelUITests.swift; sourceTree = "<group>"; };
+		F7FA8CE625C5DFCE000BF48D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7FA8CB925C5DFCD000BF48D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7FA8CD225C5DFCD000BF48D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7FA8CDD25C5DFCE000BF48D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F792EDBD25C8D31400AAE394 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F792EDBE25C8D31C00AAE394 /* Components */,
+				F7DAF44E25CA3B1F009B2E83 /* HomeScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F792EDBE25C8D31C00AAE394 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F792EDBF25C8D33700AAE394 /* AppTitle.swift */,
+				F7DAF44125CA35F9009B2E83 /* FilterInput.swift */,
+				F7DAF44625CA3820009B2E83 /* Fonts.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F792EDCA25C8DED600AAE394 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F792EDCB25C8DEE700AAE394 /* Roboto-Black.ttf */,
+				F792EDCC25C8DEF000AAE394 /* Roboto-Regular.ttf */,
+				F792EDCD25C8DEF600AAE394 /* Roboto-Light.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		F7DAF45325CA446A009B2E83 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7FA8CC325C5DFCD000BF48D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F7FA8CB325C5DFCD000BF48D = {
+			isa = PBXGroup;
+			children = (
+				F7FA8CBE25C5DFCD000BF48D /* BuscaMarvel */,
+				F7FA8CD825C5DFCE000BF48D /* BuscaMarvelTests */,
+				F7FA8CE325C5DFCE000BF48D /* BuscaMarvelUITests */,
+				F7FA8CBD25C5DFCD000BF48D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7FA8CBD25C5DFCD000BF48D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7FA8CBC25C5DFCD000BF48D /* BuscaMarvel.app */,
+				F7FA8CD525C5DFCD000BF48D /* BuscaMarvelTests.xctest */,
+				F7FA8CE025C5DFCE000BF48D /* BuscaMarvelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7FA8CBE25C5DFCD000BF48D /* BuscaMarvel */ = {
+			isa = PBXGroup;
+			children = (
+				F7DAF45325CA446A009B2E83 /* Controllers */,
+				F792EDCA25C8DED600AAE394 /* fonts */,
+				F792EDBD25C8D31400AAE394 /* Views */,
+				F7FA8CBF25C5DFCD000BF48D /* AppDelegate.swift */,
+				F7FA8CC125C5DFCD000BF48D /* SceneDelegate.swift */,
+				F7FA8CC525C5DFCD000BF48D /* Main.storyboard */,
+				F7FA8CCB25C5DFCD000BF48D /* Assets.xcassets */,
+				F7FA8CCD25C5DFCD000BF48D /* LaunchScreen.storyboard */,
+				F7FA8CD025C5DFCD000BF48D /* Info.plist */,
+				F7FA8CC825C5DFCD000BF48D /* BuscaMarvel.xcdatamodeld */,
+			);
+			path = BuscaMarvel;
+			sourceTree = "<group>";
+		};
+		F7FA8CD825C5DFCE000BF48D /* BuscaMarvelTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7FA8CD925C5DFCE000BF48D /* BuscaMarvelTests.swift */,
+				F7FA8CDB25C5DFCE000BF48D /* Info.plist */,
+			);
+			path = BuscaMarvelTests;
+			sourceTree = "<group>";
+		};
+		F7FA8CE325C5DFCE000BF48D /* BuscaMarvelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7FA8CE425C5DFCE000BF48D /* BuscaMarvelUITests.swift */,
+				F7FA8CE625C5DFCE000BF48D /* Info.plist */,
+			);
+			path = BuscaMarvelUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7FA8CBB25C5DFCD000BF48D /* BuscaMarvel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7FA8CE925C5DFCE000BF48D /* Build configuration list for PBXNativeTarget "BuscaMarvel" */;
+			buildPhases = (
+				F7FA8CB825C5DFCD000BF48D /* Sources */,
+				F7FA8CB925C5DFCD000BF48D /* Frameworks */,
+				F7FA8CBA25C5DFCD000BF48D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuscaMarvel;
+			productName = BuscaMarvel;
+			productReference = F7FA8CBC25C5DFCD000BF48D /* BuscaMarvel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7FA8CD425C5DFCD000BF48D /* BuscaMarvelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7FA8CEC25C5DFCE000BF48D /* Build configuration list for PBXNativeTarget "BuscaMarvelTests" */;
+			buildPhases = (
+				F7FA8CD125C5DFCD000BF48D /* Sources */,
+				F7FA8CD225C5DFCD000BF48D /* Frameworks */,
+				F7FA8CD325C5DFCD000BF48D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7FA8CD725C5DFCD000BF48D /* PBXTargetDependency */,
+			);
+			name = BuscaMarvelTests;
+			productName = BuscaMarvelTests;
+			productReference = F7FA8CD525C5DFCD000BF48D /* BuscaMarvelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7FA8CDF25C5DFCE000BF48D /* BuscaMarvelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7FA8CEF25C5DFCE000BF48D /* Build configuration list for PBXNativeTarget "BuscaMarvelUITests" */;
+			buildPhases = (
+				F7FA8CDC25C5DFCE000BF48D /* Sources */,
+				F7FA8CDD25C5DFCE000BF48D /* Frameworks */,
+				F7FA8CDE25C5DFCE000BF48D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7FA8CE225C5DFCE000BF48D /* PBXTargetDependency */,
+			);
+			name = BuscaMarvelUITests;
+			productName = BuscaMarvelUITests;
+			productReference = F7FA8CE025C5DFCE000BF48D /* BuscaMarvelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7FA8CB425C5DFCD000BF48D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F7FA8CBB25C5DFCD000BF48D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F7FA8CD425C5DFCD000BF48D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F7FA8CBB25C5DFCD000BF48D;
+					};
+					F7FA8CDF25C5DFCE000BF48D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F7FA8CBB25C5DFCD000BF48D;
+					};
+				};
+			};
+			buildConfigurationList = F7FA8CB725C5DFCD000BF48D /* Build configuration list for PBXProject "BuscaMarvel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7FA8CB325C5DFCD000BF48D;
+			productRefGroup = F7FA8CBD25C5DFCD000BF48D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7FA8CBB25C5DFCD000BF48D /* BuscaMarvel */,
+				F7FA8CD425C5DFCD000BF48D /* BuscaMarvelTests */,
+				F7FA8CDF25C5DFCE000BF48D /* BuscaMarvelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7FA8CBA25C5DFCD000BF48D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7FA8CCF25C5DFCD000BF48D /* LaunchScreen.storyboard in Resources */,
+				F7FA8CCC25C5DFCD000BF48D /* Assets.xcassets in Resources */,
+				F792EDD925C8E1A900AAE394 /* Roboto-Light.ttf in Resources */,
+				F792EDD525C8E1A700AAE394 /* Roboto-Regular.ttf in Resources */,
+				F7FA8CC725C5DFCD000BF48D /* Main.storyboard in Resources */,
+				F792EDD125C8E1A300AAE394 /* Roboto-Black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7FA8CD325C5DFCD000BF48D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7FA8CDE25C5DFCE000BF48D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7FA8CB825C5DFCD000BF48D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F792EDC025C8D33700AAE394 /* AppTitle.swift in Sources */,
+				F7DAF44725CA3820009B2E83 /* Fonts.swift in Sources */,
+				F7FA8CC425C5DFCD000BF48D /* ViewController.swift in Sources */,
+				F7DAF44225CA35F9009B2E83 /* FilterInput.swift in Sources */,
+				F7DAF44F25CA3B1F009B2E83 /* HomeScreen.swift in Sources */,
+				F7FA8CCA25C5DFCD000BF48D /* BuscaMarvel.xcdatamodeld in Sources */,
+				F7FA8CC025C5DFCD000BF48D /* AppDelegate.swift in Sources */,
+				F7FA8CC225C5DFCD000BF48D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7FA8CD125C5DFCD000BF48D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7FA8CDA25C5DFCE000BF48D /* BuscaMarvelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7FA8CDC25C5DFCE000BF48D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7FA8CE525C5DFCE000BF48D /* BuscaMarvelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7FA8CD725C5DFCD000BF48D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7FA8CBB25C5DFCD000BF48D /* BuscaMarvel */;
+			targetProxy = F7FA8CD625C5DFCD000BF48D /* PBXContainerItemProxy */;
+		};
+		F7FA8CE225C5DFCE000BF48D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7FA8CBB25C5DFCD000BF48D /* BuscaMarvel */;
+			targetProxy = F7FA8CE125C5DFCE000BF48D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F7FA8CC525C5DFCD000BF48D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7FA8CC625C5DFCD000BF48D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7FA8CCD25C5DFCD000BF48D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7FA8CCE25C5DFCD000BF48D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7FA8CE725C5DFCE000BF48D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7FA8CE825C5DFCE000BF48D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7FA8CEA25C5DFCE000BF48D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF6YXV7859;
+				INFOPLIST_FILE = BuscaMarvel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nelsonoliveira.BuscaMarvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7FA8CEB25C5DFCE000BF48D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF6YXV7859;
+				INFOPLIST_FILE = BuscaMarvel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nelsonoliveira.BuscaMarvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7FA8CED25C5DFCE000BF48D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF6YXV7859;
+				INFOPLIST_FILE = BuscaMarvelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nelsonoliveira.BuscaMarvelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuscaMarvel.app/BuscaMarvel";
+			};
+			name = Debug;
+		};
+		F7FA8CEE25C5DFCE000BF48D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF6YXV7859;
+				INFOPLIST_FILE = BuscaMarvelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nelsonoliveira.BuscaMarvelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuscaMarvel.app/BuscaMarvel";
+			};
+			name = Release;
+		};
+		F7FA8CF025C5DFCE000BF48D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF6YXV7859;
+				INFOPLIST_FILE = BuscaMarvelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nelsonoliveira.BuscaMarvelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BuscaMarvel;
+			};
+			name = Debug;
+		};
+		F7FA8CF125C5DFCE000BF48D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PF6YXV7859;
+				INFOPLIST_FILE = BuscaMarvelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nelsonoliveira.BuscaMarvelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BuscaMarvel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7FA8CB725C5DFCD000BF48D /* Build configuration list for PBXProject "BuscaMarvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7FA8CE725C5DFCE000BF48D /* Debug */,
+				F7FA8CE825C5DFCE000BF48D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7FA8CE925C5DFCE000BF48D /* Build configuration list for PBXNativeTarget "BuscaMarvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7FA8CEA25C5DFCE000BF48D /* Debug */,
+				F7FA8CEB25C5DFCE000BF48D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7FA8CEC25C5DFCE000BF48D /* Build configuration list for PBXNativeTarget "BuscaMarvelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7FA8CED25C5DFCE000BF48D /* Debug */,
+				F7FA8CEE25C5DFCE000BF48D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7FA8CEF25C5DFCE000BF48D /* Build configuration list for PBXNativeTarget "BuscaMarvelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7FA8CF025C5DFCE000BF48D /* Debug */,
+				F7FA8CF125C5DFCE000BF48D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7FA8CC825C5DFCD000BF48D /* BuscaMarvel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7FA8CC925C5DFCD000BF48D /* BuscaMarvel.xcdatamodel */,
+			);
+			currentVersion = F7FA8CC925C5DFCD000BF48D /* BuscaMarvel.xcdatamodel */;
+			path = BuscaMarvel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F7FA8CB425C5DFCD000BF48D /* Project object */;
+}
