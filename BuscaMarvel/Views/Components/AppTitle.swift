@@ -7,58 +7,61 @@
 
 import UIKit
 
-class AppTitle: NSObject {
-    private var titleContainer: UIView
-    var Container: UIView {
-        get { return titleContainer}
-    }
-    private var titleLabel: UILabel
-    private var subtitleLabel: UILabel
-    private var bar: UIView
+class AppTitle {
+    var container: UIView
+    var parent: UIView
+    
+    private var _titleLabel: UILabel
+    private var _subtitleLabel: UILabel
+    private var _bar: UIView
     
     init(_ parent: UIView, title: String, subtitle: String, color: UIColor = .red, fontSize: CGFloat = 18.0) {
-        let titleFont = UIFont(name: Fonts.RobotoBlack.rawValue, size: fontSize)
-        let subtitleFont = UIFont(name: Fonts.RobotoLight.rawValue, size: fontSize)
+        self.parent = parent
         
-        titleContainer = UIView()
-        titleContainer.translatesAutoresizingMaskIntoConstraints = false
+        container = UIView()
+        container.translatesAutoresizingMaskIntoConstraints = false
+        parent.addSubview(container)
         
-        parent.addSubview(titleContainer)
+        _titleLabel = UILabel()
+        _titleLabel.text = title
+        _titleLabel.textColor = color
+        _titleLabel.font = AppFonts.Title
+        _titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        titleLabel = UILabel()
-        titleLabel.text = title
-        titleLabel.textColor = color
-        titleLabel.font = titleFont
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        _subtitleLabel = UILabel()
+        _subtitleLabel.text = subtitle
+        _subtitleLabel.font = AppFonts.Subtitle
+        _subtitleLabel.textColor = .red
+        _subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
+        container.addSubview(_titleLabel)
         
-        subtitleLabel = UILabel()
-        subtitleLabel.text = subtitle
-        subtitleLabel.font = subtitleFont
-        subtitleLabel.textColor = .red
-        subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
+        _bar = UIView()
+        _bar.translatesAutoresizingMaskIntoConstraints = false
+        _bar.backgroundColor = .red
+        container.addSubview(_bar)
         
-        bar = UIView()
-        bar.translatesAutoresizingMaskIntoConstraints = false
-        bar.backgroundColor = .red
+        container.addSubview(_subtitleLabel)
         
-        titleContainer.addSubview(titleLabel)
-        titleContainer.addSubview(subtitleLabel)
-        titleContainer.addSubview(bar)
+        setupView()
+    }
+    
+    //MARK: - Layout Configurations
+    func setupView() {
+        let constraints = [
+            container.topAnchor.constraint(equalTo: parent.topAnchor),
+            container.leadingAnchor.constraint(equalTo: parent.leadingAnchor),
+            container.trailingAnchor.constraint(equalTo: parent.trailingAnchor),
+            container.heightAnchor.constraint(equalToConstant: 45),
+            _titleLabel.topAnchor.constraint(equalTo: container.topAnchor),
+            _titleLabel.leadingAnchor.constraint(equalTo: container.leadingAnchor),
+            _subtitleLabel.topAnchor.constraint(equalTo: container.topAnchor),
+            _subtitleLabel.leadingAnchor.constraint(equalTo: _titleLabel.trailingAnchor, constant: 1),
+            _bar.topAnchor.constraint(equalTo: _titleLabel.bottomAnchor, constant: 0),
+            _bar.leadingAnchor.constraint(equalTo: container.leadingAnchor),
+            _bar.heightAnchor.constraint(equalToConstant: 3),
+            _bar.widthAnchor.constraint(equalTo: _titleLabel.widthAnchor, multiplier: 0.45),
+        ];
         
-        titleContainer.topAnchor.constraint(equalTo: parent.topAnchor).isActive = true
-        titleContainer.leadingAnchor.constraint(equalTo: parent.leadingAnchor).isActive = true
-        titleContainer.trailingAnchor.constraint(equalTo: parent.trailingAnchor).isActive = true
-        titleContainer.heightAnchor.constraint(equalToConstant: 45).isActive = true
-
-        titleLabel.topAnchor.constraint(equalTo: titleContainer.topAnchor).isActive = true
-        titleLabel.leadingAnchor.constraint(equalTo: titleContainer.leadingAnchor).isActive = true
-        
-        subtitleLabel.topAnchor.constraint(equalTo: titleContainer.topAnchor).isActive = true
-        subtitleLabel.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor, constant: 1).isActive = true
-        
-        bar.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 0).isActive = true
-        bar.leadingAnchor.constraint(equalTo: titleContainer.leadingAnchor).isActive = true
-        bar.heightAnchor.constraint(equalToConstant: 3).isActive = true
-        bar.widthAnchor.constraint(equalTo: titleLabel.widthAnchor, multiplier: 0.45).isActive = true
+        parent.addConstraints(constraints)
     }
 }

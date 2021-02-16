@@ -12,3 +12,9 @@ enum Fonts: String {
     case RobotoRegular = "Roboto-Regular"
     case RobotoLight = "Roboto-Light"
 }
+
+class AppFonts {
+    static let Title = UIFont(name: Fonts.RobotoBlack.rawValue, size: 18)
+    static let Subtitle = UIFont(name: Fonts.RobotoLight.rawValue, size: 18)
+    static let Label = UIFont(name: Fonts.RobotoRegular.rawValue, size: 18)
+}

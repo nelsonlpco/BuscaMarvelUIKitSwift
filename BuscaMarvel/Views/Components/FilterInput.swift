@@ -8,56 +8,53 @@
 import UIKit
 
 class FilterInput {
-    private var parent: UIView
-    private var searchField: UITextField
-    private var label: UILabel
-    private var _container: UIStackView
-    var Container: UIView {
-        get { return self._container }
-    }
+    var parent: UIView
+    var container: UIStackView
+    private var _searchField: UITextField
+    private var _label: UILabel
+    
     private var _delegate: UITextFieldDelegate?
     var Delegate: UITextFieldDelegate? {
         set(value) {
             _delegate = value
-            searchField.delegate = _delegate
+            _searchField.delegate = _delegate
         }
         get { return _delegate }
     }
     
-    init(_ parent: UIView, description: String, placeholder: String?){
+    init(_ parent: UIView, label: String, placeholder: String?){
         self.parent = parent
         
-        let font = UIFont(name: Fonts.RobotoRegular.rawValue, size: 18)
+        container = UIStackView()
+        container.axis = .vertical
+        container.spacing = 1
+        container.translatesAutoresizingMaskIntoConstraints = false
+        parent.addSubview(container)
         
-        _container = UIStackView()
-        _container.axis = .vertical
-        _container.spacing = 1
-        _container.translatesAutoresizingMaskIntoConstraints = false
-        self.parent.addSubview(_container)
+        _label = UILabel()
+        _label.font = AppFonts.Label
+        _label.textColor = .red
+        _label.text = label
+        container.addArrangedSubview(_label)
         
-        label = UILabel()
-        label.font = font
-        label.textColor = .red
-        label.text = description
-        _container.addArrangedSubview(label)
+        _searchField = UITextField()
+        _searchField.font = AppFonts.Label
+        _searchField.textColor = .black
+        _searchField.borderStyle = .roundedRect
+        container.addArrangedSubview(_searchField)
         
-        searchField = UITextField()
-        searchField.font = font
-        searchField.textColor = .black
-        searchField.borderStyle = .roundedRect
-        _container.addArrangedSubview(searchField)
+        setupView()
     }
     
-    //MARK: - Constraints
-    func setConstraints(_ externalConstraints: [NSLayoutConstraint]? = nil) -> FilterInput {
-        let constraints = externalConstraints ?? [
-            _container.topAnchor.constraint(equalTo: parent.topAnchor),
-            _container.leadingAnchor.constraint(equalTo: parent.leadingAnchor),
-            _container.trailingAnchor.constraint(equalTo: parent.trailingAnchor)
+    //MARK: - Layout Configurations
+    func setupView() {
+        let constraints = [
+            container.topAnchor.constraint(equalTo: parent.topAnchor),
+            container.leadingAnchor.constraint(equalTo: parent.leadingAnchor),
+            container.trailingAnchor.constraint(equalTo: parent.trailingAnchor),
+            container.bottomAnchor.constraint(equalTo: parent.bottomAnchor),
         ]
         
         NSLayoutConstraint.activate(constraints)
-        
-        return self
     }
 }

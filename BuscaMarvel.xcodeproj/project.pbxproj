@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BF2DCBBCD63D73AAF703384 /* Pods_BuscaMarvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D1F011700DBBAC4C08E0FA /* Pods_BuscaMarvel.framework */; };
+		7AE7BE6D4CB8A18E2D4AA806 /* Pods_BuscaMarvelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852121E0A1FE8301F8E0D78E /* Pods_BuscaMarvelTests.framework */; };
+		D83B750423A6188BE23F61D7 /* Pods_BuscaMarvel_BuscaMarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61BD45FFB7C7F85EBCA78BB /* Pods_BuscaMarvel_BuscaMarvelUITests.framework */; };
+		F71A365D25D359B800013DBD /* MobileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71A365C25D359B800013DBD /* MobileTableViewCell.swift */; };
+		F761634725D87D100048A975 /* HeaderHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F761634625D87D100048A975 /* HeaderHeaderView.swift */; };
+		F773D19A25E046800078CACA /* HeroResponseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F773D19925E046800078CACA /* HeroResponseDelegate.swift */; };
+		F773D1AB25E1AE200078CACA /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F773D1AA25E1AE200078CACA /* Divider.swift */; };
+		F773D1B125E1E4370078CACA /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F773D1B025E1E4370078CACA /* PageControl.swift */; };
+		F79005FE25DB47D900607107 /* HeroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79005FD25DB47D900607107 /* HeroRepository.swift */; };
 		F792EDC025C8D33700AAE394 /* AppTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792EDBF25C8D33700AAE394 /* AppTitle.swift */; };
 		F792EDD125C8E1A300AAE394 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F792EDCB25C8DEE700AAE394 /* Roboto-Black.ttf */; };
 		F792EDD525C8E1A700AAE394 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F792EDCC25C8DEF000AAE394 /* Roboto-Regular.ttf */; };
@@ -14,6 +23,8 @@
 		F7DAF44225CA35F9009B2E83 /* FilterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAF44125CA35F9009B2E83 /* FilterInput.swift */; };
 		F7DAF44725CA3820009B2E83 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAF44625CA3820009B2E83 /* Fonts.swift */; };
 		F7DAF44F25CA3B1F009B2E83 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAF44E25CA3B1F009B2E83 /* HomeScreen.swift */; };
+		F7F04DE325DBB45A00FA3E54 /* HeroResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F04DE225DBB45A00FA3E54 /* HeroResponse.swift */; };
+		F7F04DE825DBB4CF00FA3E54 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F04DE725DBB4CF00FA3E54 /* Hero.swift */; };
 		F7FA8CC025C5DFCD000BF48D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA8CBF25C5DFCD000BF48D /* AppDelegate.swift */; };
 		F7FA8CC225C5DFCD000BF48D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA8CC125C5DFCD000BF48D /* SceneDelegate.swift */; };
 		F7FA8CC425C5DFCD000BF48D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FA8CC325C5DFCD000BF48D /* ViewController.swift */; };
@@ -43,6 +54,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39AD4AD0777CB1CAEA68BD24 /* Pods-BuscaMarvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuscaMarvel.debug.xcconfig"; path = "Target Support Files/Pods-BuscaMarvel/Pods-BuscaMarvel.debug.xcconfig"; sourceTree = "<group>"; };
+		3E373F99F3B109B7528FF6E0 /* Pods-BuscaMarvel-BuscaMarvelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuscaMarvel-BuscaMarvelUITests.release.xcconfig"; path = "Target Support Files/Pods-BuscaMarvel-BuscaMarvelUITests/Pods-BuscaMarvel-BuscaMarvelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		64C11E80DF7B7AF2CA4EC998 /* Pods-BuscaMarvel-BuscaMarvelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuscaMarvel-BuscaMarvelUITests.debug.xcconfig"; path = "Target Support Files/Pods-BuscaMarvel-BuscaMarvelUITests/Pods-BuscaMarvel-BuscaMarvelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		72009AF359B07A6EE65750AB /* Pods-BuscaMarvelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuscaMarvelTests.release.xcconfig"; path = "Target Support Files/Pods-BuscaMarvelTests/Pods-BuscaMarvelTests.release.xcconfig"; sourceTree = "<group>"; };
+		74D1F011700DBBAC4C08E0FA /* Pods_BuscaMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuscaMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		852121E0A1FE8301F8E0D78E /* Pods_BuscaMarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuscaMarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEA03F42C93ED8E2D41DB8A /* Pods-BuscaMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuscaMarvel.release.xcconfig"; path = "Target Support Files/Pods-BuscaMarvel/Pods-BuscaMarvel.release.xcconfig"; sourceTree = "<group>"; };
+		D61BD45FFB7C7F85EBCA78BB /* Pods_BuscaMarvel_BuscaMarvelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuscaMarvel_BuscaMarvelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D71DF72E8A6E191B05F2EEF7 /* Pods-BuscaMarvelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuscaMarvelTests.debug.xcconfig"; path = "Target Support Files/Pods-BuscaMarvelTests/Pods-BuscaMarvelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F71A365C25D359B800013DBD /* MobileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileTableViewCell.swift; sourceTree = "<group>"; };
+		F761634625D87D100048A975 /* HeaderHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderHeaderView.swift; sourceTree = "<group>"; };
+		F773D19925E046800078CACA /* HeroResponseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroResponseDelegate.swift; sourceTree = "<group>"; };
+		F773D1AA25E1AE200078CACA /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
+		F773D1B025E1E4370078CACA /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		F79005FD25DB47D900607107 /* HeroRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepository.swift; sourceTree = "<group>"; };
 		F792EDBF25C8D33700AAE394 /* AppTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitle.swift; sourceTree = "<group>"; };
 		F792EDCB25C8DEE700AAE394 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		F792EDCC25C8DEF000AAE394 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -50,6 +76,8 @@
 		F7DAF44125CA35F9009B2E83 /* FilterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterInput.swift; sourceTree = "<group>"; };
 		F7DAF44625CA3820009B2E83 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		F7DAF44E25CA3B1F009B2E83 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		F7F04DE225DBB45A00FA3E54 /* HeroResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroResponse.swift; sourceTree = "<group>"; };
+		F7F04DE725DBB4CF00FA3E54 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		F7FA8CBC25C5DFCD000BF48D /* BuscaMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuscaMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FA8CBF25C5DFCD000BF48D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7FA8CC125C5DFCD000BF48D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF2DCBBCD63D73AAF703384 /* Pods_BuscaMarvel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AE7BE6D4CB8A18E2D4AA806 /* Pods_BuscaMarvelTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +116,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83B750423A6188BE23F61D7 /* Pods_BuscaMarvel_BuscaMarvelUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C50071D116C4158BAB7ABB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39AD4AD0777CB1CAEA68BD24 /* Pods-BuscaMarvel.debug.xcconfig */,
+				9EEA03F42C93ED8E2D41DB8A /* Pods-BuscaMarvel.release.xcconfig */,
+				64C11E80DF7B7AF2CA4EC998 /* Pods-BuscaMarvel-BuscaMarvelUITests.debug.xcconfig */,
+				3E373F99F3B109B7528FF6E0 /* Pods-BuscaMarvel-BuscaMarvelUITests.release.xcconfig */,
+				D71DF72E8A6E191B05F2EEF7 /* Pods-BuscaMarvelTests.debug.xcconfig */,
+				72009AF359B07A6EE65750AB /* Pods-BuscaMarvelTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C3E3C21F8F9F2777D91855FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74D1F011700DBBAC4C08E0FA /* Pods_BuscaMarvel.framework */,
+				D61BD45FFB7C7F85EBCA78BB /* Pods_BuscaMarvel_BuscaMarvelUITests.framework */,
+				852121E0A1FE8301F8E0D78E /* Pods_BuscaMarvelTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F773D1AF25E1E4270078CACA /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				F773D1B025E1E4370078CACA /* PageControl.swift */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		F79005FC25DB47B800607107 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F79005FD25DB47D900607107 /* HeroRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F790060F25DB5BDF00607107 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7F04DE225DBB45A00FA3E54 /* HeroResponse.swift */,
+				F7F04DE725DBB4CF00FA3E54 /* Hero.swift */,
+				F773D19925E046800078CACA /* HeroResponseDelegate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F792EDBD25C8D31400AAE394 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +184,13 @@
 		F792EDBE25C8D31C00AAE394 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F773D1AF25E1E4270078CACA /* PageControl */,
 				F792EDBF25C8D33700AAE394 /* AppTitle.swift */,
 				F7DAF44125CA35F9009B2E83 /* FilterInput.swift */,
 				F7DAF44625CA3820009B2E83 /* Fonts.swift */,
+				F71A365C25D359B800013DBD /* MobileTableViewCell.swift */,
+				F761634625D87D100048A975 /* HeaderHeaderView.swift */,
+				F773D1AA25E1AE200078CACA /* Divider.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -136,6 +220,8 @@
 				F7FA8CD825C5DFCE000BF48D /* BuscaMarvelTests */,
 				F7FA8CE325C5DFCE000BF48D /* BuscaMarvelUITests */,
 				F7FA8CBD25C5DFCD000BF48D /* Products */,
+				8C50071D116C4158BAB7ABB5 /* Pods */,
+				C3E3C21F8F9F2777D91855FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +238,8 @@
 		F7FA8CBE25C5DFCD000BF48D /* BuscaMarvel */ = {
 			isa = PBXGroup;
 			children = (
+				F790060F25DB5BDF00607107 /* Models */,
+				F79005FC25DB47B800607107 /* Repository */,
 				F7DAF45325CA446A009B2E83 /* Controllers */,
 				F792EDCA25C8DED600AAE394 /* fonts */,
 				F792EDBD25C8D31400AAE394 /* Views */,
@@ -191,9 +279,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7FA8CE925C5DFCE000BF48D /* Build configuration list for PBXNativeTarget "BuscaMarvel" */;
 			buildPhases = (
+				CB608274701F6D91C3581D3C /* [CP] Check Pods Manifest.lock */,
 				F7FA8CB825C5DFCD000BF48D /* Sources */,
 				F7FA8CB925C5DFCD000BF48D /* Frameworks */,
 				F7FA8CBA25C5DFCD000BF48D /* Resources */,
+				2ED8F29ECCFCD0825402B2EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,6 +298,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7FA8CEC25C5DFCE000BF48D /* Build configuration list for PBXNativeTarget "BuscaMarvelTests" */;
 			buildPhases = (
+				05611914E9409452E29E82DA /* [CP] Check Pods Manifest.lock */,
 				F7FA8CD125C5DFCD000BF48D /* Sources */,
 				F7FA8CD225C5DFCD000BF48D /* Frameworks */,
 				F7FA8CD325C5DFCD000BF48D /* Resources */,
@@ -226,9 +317,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7FA8CEF25C5DFCE000BF48D /* Build configuration list for PBXNativeTarget "BuscaMarvelUITests" */;
 			buildPhases = (
+				2AF3A223C88C0A322A927BBC /* [CP] Check Pods Manifest.lock */,
 				F7FA8CDC25C5DFCE000BF48D /* Sources */,
 				F7FA8CDD25C5DFCE000BF48D /* Frameworks */,
 				F7FA8CDE25C5DFCE000BF48D /* Resources */,
+				2E830FE5682B5366E9AF7384 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,18 +405,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05611914E9409452E29E82DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuscaMarvelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AF3A223C88C0A322A927BBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuscaMarvel-BuscaMarvelUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E830FE5682B5366E9AF7384 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BuscaMarvel-BuscaMarvelUITests/Pods-BuscaMarvel-BuscaMarvelUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BuscaMarvel-BuscaMarvelUITests/Pods-BuscaMarvel-BuscaMarvelUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BuscaMarvel-BuscaMarvelUITests/Pods-BuscaMarvel-BuscaMarvelUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ED8F29ECCFCD0825402B2EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BuscaMarvel/Pods-BuscaMarvel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BuscaMarvel/Pods-BuscaMarvel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BuscaMarvel/Pods-BuscaMarvel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB608274701F6D91C3581D3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuscaMarvel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F7FA8CB825C5DFCD000BF48D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79005FE25DB47D900607107 /* HeroRepository.swift in Sources */,
 				F792EDC025C8D33700AAE394 /* AppTitle.swift in Sources */,
 				F7DAF44725CA3820009B2E83 /* Fonts.swift in Sources */,
+				F71A365D25D359B800013DBD /* MobileTableViewCell.swift in Sources */,
 				F7FA8CC425C5DFCD000BF48D /* ViewController.swift in Sources */,
+				F773D1B125E1E4370078CACA /* PageControl.swift in Sources */,
 				F7DAF44225CA35F9009B2E83 /* FilterInput.swift in Sources */,
+				F7F04DE325DBB45A00FA3E54 /* HeroResponse.swift in Sources */,
+				F773D19A25E046800078CACA /* HeroResponseDelegate.swift in Sources */,
 				F7DAF44F25CA3B1F009B2E83 /* HomeScreen.swift in Sources */,
 				F7FA8CCA25C5DFCD000BF48D /* BuscaMarvel.xcdatamodeld in Sources */,
 				F7FA8CC025C5DFCD000BF48D /* AppDelegate.swift in Sources */,
+				F761634725D87D100048A975 /* HeaderHeaderView.swift in Sources */,
+				F773D1AB25E1AE200078CACA /* Divider.swift in Sources */,
+				F7F04DE825DBB4CF00FA3E54 /* Hero.swift in Sources */,
 				F7FA8CC225C5DFCD000BF48D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +701,7 @@
 		};
 		F7FA8CEA25C5DFCE000BF48D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39AD4AD0777CB1CAEA68BD24 /* Pods-BuscaMarvel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -516,6 +721,7 @@
 		};
 		F7FA8CEB25C5DFCE000BF48D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EEA03F42C93ED8E2D41DB8A /* Pods-BuscaMarvel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -535,6 +741,7 @@
 		};
 		F7FA8CED25C5DFCE000BF48D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71DF72E8A6E191B05F2EEF7 /* Pods-BuscaMarvelTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -557,6 +764,7 @@
 		};
 		F7FA8CEE25C5DFCE000BF48D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72009AF359B07A6EE65750AB /* Pods-BuscaMarvelTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -579,6 +787,7 @@
 		};
 		F7FA8CF025C5DFCE000BF48D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C11E80DF7B7AF2CA4EC998 /* Pods-BuscaMarvel-BuscaMarvelUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -599,6 +808,7 @@
 		};
 		F7FA8CF125C5DFCE000BF48D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E373F99F3B109B7528FF6E0 /* Pods-BuscaMarvel-BuscaMarvelUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
