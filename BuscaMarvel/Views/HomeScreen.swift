@@ -2,7 +2,7 @@
 //  HomeScreen.swift
 //  BuscaMarvel
 //
-//  Created by Nelson Prado on 02/02/21.
+//  Created by Nelson Prado on 02/02/22.
 //
 
 import UIKit
@@ -16,7 +16,7 @@ class HomeScreen {
     private var _divider: Dividir
     private var _pageControlContainer: UIView
     private let _filterContainer: UIView
-    var pc: PageControl
+    private let pc: NumericPageControl
     
     var table: UITableView
     
@@ -44,33 +44,33 @@ class HomeScreen {
         
         _pageControlContainer = UIView()
         _pageControlContainer.translatesAutoresizingMaskIntoConstraints = false
-        _pageControlContainer.backgroundColor = .yellow
+        
         container.addSubview(_pageControlContainer)
         
         _divider = Dividir(parent)
         
-        pc = PageControl.init(frame: .zero)
-        pc.currentPageIndicatorTintColor = .green
-        pc.pageIndicatorTintColor = .blue
-        pc.numberOfPages = 4
+        pc = NumericPageControl.init(withNumberOfPages: 4)
+        pc.addTarget(self, action: #selector(onChangePage(_:)), for: .valueChanged)
         pc.translatesAutoresizingMaskIntoConstraints = false
-        
         _pageControlContainer.addSubview(pc)
-        
         pc.centerYAnchor.constraint(equalTo: _pageControlContainer.centerYAnchor).isActive = true
         pc.centerXAnchor.constraint(equalTo: _pageControlContainer.centerXAnchor).isActive = true
-        pc.heightAnchor.constraint(equalToConstant: 35).isActive = true
-        pc.widthAnchor.constraint(equalTo: _pageControlContainer.widthAnchor, multiplier: 0.5, constant: 0).isActive = true
+        pc.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        pc.widthAnchor.constraint(equalTo: _pageControlContainer.widthAnchor, multiplier: 0.6, constant: 0).isActive = true
         
         setupLayout()
+    }
+    
+    @objc func onChangePage(_ sender: NumericPageControl) {
+        print("selecionou: \(sender.currentPage)")
     }
     
     //MARK: - Layout Configurations
     func setupLayout() {
         let constraints = [
             container.topAnchor.constraint(equalTo: parent.safeAreaLayoutGuide.topAnchor),
-            container.leadingAnchor.constraint(equalTo: parent.safeAreaLayoutGuide.leadingAnchor, constant: 33),
-            container.trailingAnchor.constraint(equalTo: parent.safeAreaLayoutGuide.trailingAnchor, constant: -33),
+            container.leadingAnchor.constraint(equalTo: parent.safeAreaLayoutGuide.leadingAnchor, constant: 12),
+            container.trailingAnchor.constraint(equalTo: parent.safeAreaLayoutGuide.trailingAnchor, constant: -12),
             container.bottomAnchor.constraint(equalTo: parent.safeAreaLayoutGuide.bottomAnchor),
             _filterContainer.topAnchor.constraint(equalTo: _title.container.bottomAnchor),
             _filterContainer.leadingAnchor.constraint(equalTo: container.leadingAnchor),
@@ -84,7 +84,6 @@ class HomeScreen {
             _pageControlContainer.bottomAnchor.constraint(equalTo: _divider.container.topAnchor),
             _pageControlContainer.leadingAnchor.constraint(equalTo: container.leadingAnchor),
             _pageControlContainer.trailingAnchor.constraint(equalTo: container.trailingAnchor),
-            
         ]
         
         NSLayoutConstraint.activate(constraints)

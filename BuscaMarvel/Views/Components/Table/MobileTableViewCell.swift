@@ -35,27 +35,16 @@ class MobileTableViewCell: UITableViewCell {
         _container.addSubview(_heroImage)
         _container.addSubview(_heroName)
                         
-        _container.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 30).isActive = true
-        _container.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-        _container.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-        _container.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        
         
         let border = CALayer()
         border.backgroundColor = UIColor.red.cgColor
         border.frame = CGRect(x: 0, y: 90, width: self.frame.size.width + 60, height: 1)
         contentView.layer.addSublayer(border)
-//        contentView.layer.borderWidth = 2
-//        contentView.layer.borderColor = UIColor.red.cgColor
         
-        _heroImage.widthAnchor.constraint(equalToConstant: 58).isActive = true
-        _heroImage.heightAnchor.constraint(equalToConstant: 58).isActive = true
-        _heroImage.centerYAnchor.constraint(equalTo: _container.centerYAnchor).isActive = true
-        _heroImage.leadingAnchor.constraint(equalTo: _container.leadingAnchor).isActive = true
-        _heroImage.clipsToBounds = true
-        _heroImage.layer.cornerRadius = 27
+        setupLayout()
         
-        _heroName.leadingAnchor.constraint(equalTo: _heroImage.trailingAnchor, constant: 30).isActive = true
-        _heroName.centerYAnchor.constraint(equalTo: _container.centerYAnchor).isActive = true
+        
     }
     
     required init?(coder: NSCoder) {
@@ -68,8 +57,7 @@ class MobileTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
     }
     
     func setImage(imagePath: String) {
@@ -85,4 +73,21 @@ class MobileTableViewCell: UITableViewCell {
         _heroName.text = name
     }
     
+    //MARK: - Layout Configurations
+    func setupLayout() {
+        _container.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 30).isActive = true
+        _container.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+        _container.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        _container.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        
+        _heroImage.widthAnchor.constraint(equalToConstant: 58).isActive = true
+        _heroImage.heightAnchor.constraint(equalToConstant: 58).isActive = true
+        _heroImage.centerYAnchor.constraint(equalTo: _container.centerYAnchor).isActive = true
+        _heroImage.leadingAnchor.constraint(equalTo: _container.leadingAnchor).isActive = true
+        _heroImage.clipsToBounds = true
+        _heroImage.layer.cornerRadius = 27
+        
+        _heroName.leadingAnchor.constraint(equalTo: _heroImage.trailingAnchor, constant: 30).isActive = true
+        _heroName.centerYAnchor.constraint(equalTo: _container.centerYAnchor).isActive = true
+    }
 }
