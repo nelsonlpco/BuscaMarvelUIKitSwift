@@ -9,18 +9,16 @@ import UIKit
 
 class NumericPageControl: UIControl {
     //MARK: - Properties
-    private var numberOfPages: Int = 0 {
-        didSet {
-            for tag in 0 ..< numberOfPages {
-                dots.append(makeDot(tag))
-            }
-        }
-    }
+    lazy private var presentation: PageControlPresentation = {
+        return NumericPageControlPresentation(withDelegate: self)
+    }()
+    
+    private var dots: [Dot] = []
+    
     public var currentPage: Int = 0 {
-        
         didSet {
-            print("setando currentPage")
-            print(currentPage)
+            self.sendActions(for: .valueChanged)
+            
             if currentPage >= 1 && !self.rightArrow.isActive {
                 self.rightArrow.active()
                 self.rightArrow.setNeedsDisplay()
@@ -41,18 +39,11 @@ class NumericPageControl: UIControl {
             }
         }
     }
-    private var dots: [Dot] = [] {
-        didSet {
-            if dots.count == numberOfPages {
-                setupLayout()
-            }
-        }
-    }
     
     lazy private var leftArrow: Arrow = {
         let arrow = Arrow(isRight: false, isActive: true)
         arrow.tag = 0
-        arrow.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(nextPage(_:))))
+        arrow.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(nextPageHandler(_:))))
         
         return arrow
     }()
@@ -60,7 +51,7 @@ class NumericPageControl: UIControl {
     lazy private var rightArrow: Arrow = {
         let arrow = Arrow(isRight: true, isActive: false)
         arrow.tag = 1
-        arrow.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(backPage(_:))))
+        arrow.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(backPageHandler(_:))))
         
         return arrow
     }()
@@ -69,19 +60,14 @@ class NumericPageControl: UIControl {
     
     //MARK: - Initializers
     convenience init() {
-        self.init(withNumberOfPages: .zero)
-    }
-    
-    init(withNumberOfPages pages: Int) {
-        super.init(frame: .zero)
-        setNumberOfPages(pages)
-        self.currentPage = 0
-        
+        self.init(frame: .zero)
+
         setupLayout()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         setupLayout()
     }
     
@@ -89,49 +75,40 @@ class NumericPageControl: UIControl {
         super.init(coder: coder)
     }
     
-    //MARK: - Helpers
-    func setNumberOfPages(_ pages: Int) {
-        self.numberOfPages = pages
+    //MARK: - Actions
+    func setTotalDots(_ total: Int) {
+        self.presentation.setTotalDots(total)
     }
     
-    private func makeDot(_ dotNumber: Int) -> Dot {
-        let dot = Dot(description: String(dotNumber))
-        if dotNumber == currentPage {
-            print("ativar")
+    
+    private func makeDot(_ dotModel: DotModel) -> Dot {
+        let dot = Dot(description: dotModel.label)
+        if dotModel.isActive {
             dot.activate()
         }
-        dot.tag = dotNumber
+        dot.tag = dotModel.tag
         dot.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(onTap(_:))))
         
         return dot
     }
     
-    @objc private func onTap(_ sender: UITapGestureRecognizer){
-        guard let dot = sender.view as? Dot else { print("Not converted to dot"); return }
-        
-        print(dot.tag)
-        self.currentPage = dot.tag
-        
+    @objc private func nextPageHandler(_ sender: UITapGestureRecognizer) {
+        presentation.nextPage()
         self.sendActions(for: .valueChanged)
     }
     
-    @objc private func nextPage(_ sender: UITapGestureRecognizer) {
-        guard let arrow = sender.view as? Arrow else { print("Not converted to Arrow"); return}
-        if arrow.isActive {
-            self.currentPage = self.currentPage + 1;
-        }
+    @objc private func backPageHandler(_ sender: UITapGestureRecognizer) {
+        presentation.backPage()
+        self.sendActions(for: .valueChanged)
     }
     
-    @objc private func backPage(_ sender: UITapGestureRecognizer) {
-        guard let arrow = sender.view as? Arrow else { print("Not converted to Arrow"); return}
-        if arrow.isActive {
-            self.currentPage = self.currentPage - 1;
-        }
+    @objc private func onTap(_ sender: UITapGestureRecognizer){
+        guard let dot = sender.view as? Dot else { print("Not converted to dot"); return }
+        presentation.setCurrentPage(dot.tag)
     }
     
     //MARK: - Layout configurations
     func setupLayout() {
-        
         self.container.addArrangedSubview(leftArrow)
         
         self.dots.forEach { dot in
@@ -146,8 +123,6 @@ class NumericPageControl: UIControl {
         container.distribution = .fillEqually
         container.spacing = 8
         self.addSubview(container)
-        
-        
         
         addConstraints([
             container.centerYAnchor.constraint(equalTo: self.centerYAnchor),
@@ -167,6 +142,64 @@ class NumericPageControl: UIControl {
                 dot.widthAnchor.constraint(equalTo: container.heightAnchor, multiplier: 0.7, constant: 0),
                 dot.heightAnchor.constraint(equalTo: container.heightAnchor, multiplier: 0.7, constant: 0),
             ])
+        }
+    }
+}
+
+//MARK: - Delegate
+extension NumericPageControl: NumericPageControlDelegate {
+    func updateLeftArrow(isActive: Bool) {
+        if isActive {
+            leftArrow.active()
+        }
+        else {
+            leftArrow.desactive()
+        }
+    }
+    
+    func updateRightArrow(isActive: Bool) {
+        if isActive {
+            rightArrow.active()
+        }
+        else {
+            rightArrow.desactive()
+        }
+    }
+    
+    
+    func makeDots(_ dotsModel: [DotModel]) {
+        for dot in dotsModel {
+            dots.append(makeDot(dot))
+        }
+        
+        setupLayout()
+    }
+    
+    func updateDots(_ dotsModel: [DotModel]) {
+        for (index, dotModel) in dotsModel.enumerated() {
+            let dot = dots[index]
+            dot.tag = dotModel.tag
+            dot.label.text = dotModel.label
+            
+            if(dotModel.isActive) {
+                dots[index].activate()
+            } else {
+                dots[index].deactive()
+            }
+        }
+    }
+    
+    func incrementDots() {
+        for dot in dots {
+            dot.tag = dot.tag + 1
+            dot.label.text = String(dot.tag)
+        }
+    }
+    
+    func decrementDots() {
+        for dot in dots {
+            dot.tag = dot.tag - 1
+            dot.label.text = String(dot.tag)
         }
     }
 }

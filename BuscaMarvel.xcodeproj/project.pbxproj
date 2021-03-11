@@ -13,6 +13,10 @@
 		F716F87925E48916006FB24D /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F716F87825E48916006FB24D /* Dot.swift */; };
 		F716F88125E49A6C006FB24D /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F716F88025E49A6C006FB24D /* Arrow.swift */; };
 		F71A365D25D359B800013DBD /* MobileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71A365C25D359B800013DBD /* MobileTableViewCell.swift */; };
+		F7493FE725F59678009BE44B /* NumericPageControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7493FE625F59678009BE44B /* NumericPageControlDelegate.swift */; };
+		F7493FED25F5A4DC009BE44B /* PageControlPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7493FEC25F5A4DC009BE44B /* PageControlPresentation.swift */; };
+		F7493FF225F5A508009BE44B /* NumericPageControlPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7493FF125F5A508009BE44B /* NumericPageControlPresentation.swift */; };
+		F749400025F5C0D4009BE44B /* NumericPageControlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7493FFF25F5C0D4009BE44B /* NumericPageControlModel.swift */; };
 		F761634725D87D100048A975 /* HeaderHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F761634625D87D100048A975 /* HeaderHeaderView.swift */; };
 		F773D19A25E046800078CACA /* HeroResponseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F773D19925E046800078CACA /* HeroResponseDelegate.swift */; };
 		F773D1AB25E1AE200078CACA /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F773D1AA25E1AE200078CACA /* Divider.swift */; };
@@ -22,6 +26,7 @@
 		F792EDD125C8E1A300AAE394 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F792EDCB25C8DEE700AAE394 /* Roboto-Black.ttf */; };
 		F792EDD525C8E1A700AAE394 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F792EDCC25C8DEF000AAE394 /* Roboto-Regular.ttf */; };
 		F792EDD925C8E1A900AAE394 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F792EDCD25C8DEF600AAE394 /* Roboto-Light.ttf */; };
+		F7A0A1AA25F9A19300A1C46E /* DotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0A1A925F9A19300A1C46E /* DotModel.swift */; };
 		F7DAF44225CA35F9009B2E83 /* FilterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAF44125CA35F9009B2E83 /* FilterInput.swift */; };
 		F7DAF44725CA3820009B2E83 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAF44625CA3820009B2E83 /* Fonts.swift */; };
 		F7DAF44F25CA3B1F009B2E83 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DAF44E25CA3B1F009B2E83 /* HomeScreen.swift */; };
@@ -68,6 +73,10 @@
 		F716F87825E48916006FB24D /* Dot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
 		F716F88025E49A6C006FB24D /* Arrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
 		F71A365C25D359B800013DBD /* MobileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileTableViewCell.swift; sourceTree = "<group>"; };
+		F7493FE625F59678009BE44B /* NumericPageControlDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericPageControlDelegate.swift; sourceTree = "<group>"; };
+		F7493FEC25F5A4DC009BE44B /* PageControlPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlPresentation.swift; sourceTree = "<group>"; };
+		F7493FF125F5A508009BE44B /* NumericPageControlPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericPageControlPresentation.swift; sourceTree = "<group>"; };
+		F7493FFF25F5C0D4009BE44B /* NumericPageControlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericPageControlModel.swift; sourceTree = "<group>"; };
 		F761634625D87D100048A975 /* HeaderHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderHeaderView.swift; sourceTree = "<group>"; };
 		F773D19925E046800078CACA /* HeroResponseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroResponseDelegate.swift; sourceTree = "<group>"; };
 		F773D1AA25E1AE200078CACA /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
@@ -77,6 +86,7 @@
 		F792EDCB25C8DEE700AAE394 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		F792EDCC25C8DEF000AAE394 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		F792EDCD25C8DEF600AAE394 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		F7A0A1A925F9A19300A1C46E /* DotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotModel.swift; sourceTree = "<group>"; };
 		F7DAF44125CA35F9009B2E83 /* FilterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterInput.swift; sourceTree = "<group>"; };
 		F7DAF44625CA3820009B2E83 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		F7DAF44E25CA3B1F009B2E83 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -150,9 +160,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F7493FEB25F59759009BE44B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F7A0A1B125F9A8B100A1C46E /* Model */,
+				F7493FEC25F5A4DC009BE44B /* PageControlPresentation.swift */,
+				F7493FF125F5A508009BE44B /* NumericPageControlPresentation.swift */,
+				F7493FE625F59678009BE44B /* NumericPageControlDelegate.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		F773D1AF25E1E4270078CACA /* PageControl */ = {
 			isa = PBXGroup;
 			children = (
+				F7493FEB25F59759009BE44B /* Domain */,
 				F773D1CC25E428740078CACA /* NumericPageControl.swift */,
 				F716F87825E48916006FB24D /* Dot.swift */,
 				F716F88025E49A6C006FB24D /* Arrow.swift */,
@@ -217,6 +239,15 @@
 				F792EDCD25C8DEF600AAE394 /* Roboto-Light.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		F7A0A1B125F9A8B100A1C46E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7493FFF25F5C0D4009BE44B /* NumericPageControlModel.swift */,
+				F7A0A1A925F9A19300A1C46E /* DotModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F7DAF45325CA446A009B2E83 /* Controllers */ = {
@@ -527,19 +558,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7493FED25F5A4DC009BE44B /* PageControlPresentation.swift in Sources */,
 				F79005FE25DB47D900607107 /* HeroRepository.swift in Sources */,
 				F792EDC025C8D33700AAE394 /* AppTitle.swift in Sources */,
 				F7DAF44725CA3820009B2E83 /* Fonts.swift in Sources */,
+				F7A0A1AA25F9A19300A1C46E /* DotModel.swift in Sources */,
 				F71A365D25D359B800013DBD /* MobileTableViewCell.swift in Sources */,
 				F7FA8CC425C5DFCD000BF48D /* ViewController.swift in Sources */,
 				F716F87925E48916006FB24D /* Dot.swift in Sources */,
+				F7493FF225F5A508009BE44B /* NumericPageControlPresentation.swift in Sources */,
 				F7DAF44225CA35F9009B2E83 /* FilterInput.swift in Sources */,
 				F7F04DE325DBB45A00FA3E54 /* HeroResponse.swift in Sources */,
 				F773D19A25E046800078CACA /* HeroResponseDelegate.swift in Sources */,
 				F7DAF44F25CA3B1F009B2E83 /* HomeScreen.swift in Sources */,
+				F749400025F5C0D4009BE44B /* NumericPageControlModel.swift in Sources */,
 				F7FA8CCA25C5DFCD000BF48D /* BuscaMarvel.xcdatamodeld in Sources */,
 				F7FA8CC025C5DFCD000BF48D /* AppDelegate.swift in Sources */,
 				F761634725D87D100048A975 /* HeaderHeaderView.swift in Sources */,
+				F7493FE725F59678009BE44B /* NumericPageControlDelegate.swift in Sources */,
 				F773D1AB25E1AE200078CACA /* Divider.swift in Sources */,
 				F773D1CD25E428740078CACA /* NumericPageControl.swift in Sources */,
 				F7F04DE825DBB4CF00FA3E54 /* Hero.swift in Sources */,

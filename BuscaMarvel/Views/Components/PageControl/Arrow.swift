@@ -9,10 +9,14 @@ import UIKit
 
 class Arrow: UIView {
     //MARK: - Properties
-    var isActive: Bool = false
+    var isActive: Bool = false {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     
     //MARK: - Initializers
-    convenience init(isRight: Bool, isActive: Bool) {
+    convenience init(isRight: Bool = false, isActive: Bool = true) {
         self.init(frame: .zero)
         self.isActive = isActive
         
@@ -32,16 +36,28 @@ class Arrow: UIView {
     }
     
     //MARK: - Actions
-    override func draw(_ rect: CGRect) {
-        guard let currentContext = UIGraphicsGetCurrentContext() else { print("Could not get the Context"); return}
-        drawRectangle(currentContext, isFilled: true)
-       
+    func active() {
+        if !isActive {
+            isActive = true
+        }
     }
     
+    func desactive() {
+        if isActive {
+            isActive = false
+        }
+    }
+    
+    //MARK: - Layout seupt
     private func rotate(angle: CGFloat) {
         let radians = angle / 180.0 * CGFloat.pi
         let rotation = self.transform.rotated(by: radians)
         self.transform = rotation
+    }
+    
+    override func draw(_ rect: CGRect) {
+        guard let currentContext = UIGraphicsGetCurrentContext() else { print("Could not get the Context"); return}
+        drawRectangle(currentContext, isFilled: true)
     }
     
     private func drawRectangle(_ context: CGContext, isFilled: Bool) {
@@ -69,13 +85,5 @@ class Arrow: UIView {
             context.setStrokeColor(UIColor.red.cgColor)
             context.strokePath()
         }
-    }
-    
-    func active() {
-        isActive = true
-    }
-    
-    func desactive() {
-        isActive = false
     }
 }

@@ -49,7 +49,9 @@ class HomeScreen {
         
         _divider = Dividir(parent)
         
-        pc = NumericPageControl.init(withNumberOfPages: 4)
+        pc = NumericPageControl()
+        pc.setTotalDots(4)
+        
         pc.addTarget(self, action: #selector(onChangePage(_:)), for: .valueChanged)
         pc.translatesAutoresizingMaskIntoConstraints = false
         _pageControlContainer.addSubview(pc)
